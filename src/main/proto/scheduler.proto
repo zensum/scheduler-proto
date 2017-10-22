@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package se.zensum.scheduler_proto;
+
+message Task {
+    message KMsg {
+        string topic = 1;
+        string key = 2;
+        bytes body = 3;
+    }
+    fixed64 id = 1;
+    fixed64 time = 2;
+    KMsg kmsg = 3;
+}
