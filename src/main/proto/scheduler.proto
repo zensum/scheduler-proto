@@ -11,6 +11,6 @@ message Task {
     fixed64 id = 1;
     fixed64 time = 2;
     KMsg kmsg = 3;
-    uint32 interval = 4;
+    uint32 interval_seconds = 4;
     fixed64 expires = 5;
 }
