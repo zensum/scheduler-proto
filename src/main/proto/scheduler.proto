@@ -13,4 +13,5 @@ message Task {
     KMsg kmsg = 3;
     uint32 interval_seconds = 4;
     fixed64 expires = 5;
+    bool remove = 6;
 }
